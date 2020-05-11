@@ -1,0 +1,28 @@
+from numpy.random import randint
+
+def findSum(arr = [[]]):
+    val = 0
+    for r in arr:
+        for c in r:
+            val += c
+    
+    print(val)
+
+
+
+
+a = [[randint(0, 10) for x in range(10)] for y in range(10)]
+
+
+val = 0
+
+for r in a:
+    for c in r:
+        print(c,end = " ")
+        val += c
+    print()
+
+findSum(a)
+    
+
+    
